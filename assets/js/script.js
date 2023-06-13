@@ -17,15 +17,7 @@ const part3 = ",ca&APPID=072c5a4ab04eb390a91ac908259464d0";
 var weatherUrl = part0 + part1 + part2 + part3;
 
 var setData1=0;
-
-
-
-
-
-
-
-
-
+var setMat1=[];
 
 
 
@@ -45,7 +37,9 @@ fetch("http://api.openweathermap.org/geo/1.0/direct?q=Ottawa,CA&limit=5&appid=07
     fetch(url)
       .then(response => response.json()).then(forecastInfo => {
         console.log(forecastInfo);
-        
+        console.log(forecastInfo.daily);
+        console.log(forecastInfo.daily[0].temp);
+        setMat1=forecastInfo;
 
       });
 
@@ -53,7 +47,7 @@ fetch("http://api.openweathermap.org/geo/1.0/direct?q=Ottawa,CA&limit=5&appid=07
 
 //-------
 
-console.log("setData1", setData1);
+console.log("setMat1", setMat1);
 
 
 
