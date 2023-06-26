@@ -28,16 +28,26 @@
       <section class="card card-rounded col-7 bg-white">
         <header class="card-header text-center">
           <h2 class="text-white">
-            Dynamically Generated Elements
+            For canadian cities 
           </h2>
         </header>
         <div class="text-center p-4">
+          <a href="https://openweathermap.org/img/wn/10d@2x.png"> Condition </a>
           <p class="card-body">
-            Generate dynamic
+            Weather
           </p>
-          <button class="btn btn-danger" id="fetch-button">
-            Click Me
-          </button>
+          <h3>Enter city name</h3>
+
+          <input type="text" id="myText" value="">
+          
+          <p>Click the "Search city" button to get the weather forescast.</p>
+          
+          <button onclick="doSearchCity()">Search city</button>
+          
+          <p id="demo"></p>
+
+          <div id="icon"><img id="wicon" src="" alt="Weather icon"></div>
+          
         </div>
         <div class="flex-column" id="users"></div>
       </section>
@@ -46,3 +56,4 @@
   </body>
 </html># Assignment-6-A
 # Assign6B
+# WeatherForecast
